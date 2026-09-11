@@ -1,0 +1,205 @@
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #ffffff;
+  padding: 25px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.inventory {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.medicine-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.medicine-form button {
+  grid-column: span 2;
+}
+
+.search-box input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.medicine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.medicine-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.medicine-card h3 {
+  margin-top: 0;
+}
+
+.stock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.available {
+  font-weight: bold;
+}
+
+.unavailable {
+  font-weight: bold;
+}
+
+.low-stock {
+  font-weight: bold;
+}
+
+.sell-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.sell-box input {
+  width: 70px;
+}
+
+.sell-box button {
+  flex: 1;
+}
+
+@media (max-width: 800px) {
+  .medicine-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .medicine-form {
+    grid-template-columns: 1fr;
+  }
+
+  .medicine-form button {
+    grid-column: span 1;
+  }
+}
+
+.card-buttons {
+  margin-top: 15px;
+}
+
+.card-buttons > button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.edit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-buttons button {
+  flex: 1;
+}
+
+.batches {
+  margin-top: 20px;
+}
+
+.batch {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.batch p {
+  margin: 5px 0;
+}
+
+.batch-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.batch-form button {
+  width: 100%;
+}
+
+.edit-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-buttons button {
+  flex: 1;
+}
+
+.batch .edit-button {
+  margin-top: 10px;
+}
+
+.edit-form label {
+  font-weight: 600;
+  margin-top: 5px;
+}
