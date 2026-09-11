@@ -34,7 +34,7 @@ function Inventory() {
     try {
 
       const response = await fetch(
-        `http://localhost:5000/api/medicines?search=${search}&showAll=${showAllBatches}`
+        `https://medical-shop-inventory.onrender.com/api/medicines?search=${search}&showAll=${showAllBatches}`
       );
 
       const data = await response.json();
@@ -56,7 +56,7 @@ function Inventory() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/important-orders"
+        "https://medical-shop-inventory.onrender.com/api/important-orders"
       );
 
       const data = await response.json();
@@ -88,7 +88,7 @@ function Inventory() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/important-orders",
+        "https://medical-shop-inventory.onrender.com/api/important-orders",
         {
           method: "POST",
 
@@ -137,7 +137,7 @@ function Inventory() {
 const deleteImportantOrder = async (id) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/important-orders/${id}`,
+      `https://medical-shop-inventory.onrender.com/api/important-orders/${id}`,
       {
         method: "DELETE"
       }
@@ -189,7 +189,7 @@ const deleteImportantOrder = async (id) => {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/medicines",
+        "https://medical-shop-inventory.onrender.com/api/medicines",
         {
           method: "POST",
 
@@ -627,7 +627,7 @@ function MedicineCard({
 
       const response = await fetch(
 
-        `http://localhost:5000/api/medicines/${medicine._id}`,
+        `https://medical-shop-inventory.onrender.com/api/medicines/${medicine._id}`,
 
         {
 
@@ -730,7 +730,7 @@ function MedicineCard({
 
       const response = await fetch(
 
-        `http://localhost:5000/api/medicines/${medicine._id}/batches/${editingBatch}`,
+        `https://medical-shop-inventory.onrender.com/api/medicines/${medicine._id}/batches/${editingBatch}`,
 
         {
 
@@ -802,7 +802,7 @@ function MedicineCard({
 
       const response = await fetch(
 
-        `http://localhost:5000/api/medicines/${medicine._id}/batches`,
+        `https://medical-shop-inventory.onrender.com/api/medicines/${medicine._id}/batches`,
 
         {
 
@@ -889,7 +889,7 @@ function MedicineCard({
 
       const response = await fetch(
 
-        `http://localhost:5000/api/medicines/${medicine._id}/sell`,
+        `https://medical-shop-inventory.onrender.com/api/medicines/${medicine._id}/sell`,
 
         {
 
@@ -965,7 +965,7 @@ const deleteMedicine = async () => {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/medicines/${medicine._id}`,
+      `https://medical-shop-inventory.onrender.com/api/medicines/${medicine._id}`,
       {
         method: "DELETE"
       }
